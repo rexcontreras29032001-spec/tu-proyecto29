@@ -1,0 +1,93 @@
+/* =======================
+   RESET & VARIABLES
+======================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+:root {
+    --color-primario: #00c3ff;
+    --color-oscuro: #1a1a1a;
+    --color-fondo: #f4f4f4;
+}
+
+/* =======================
+   BODY
+======================= */
+body {
+    background: var(--color-fondo);
+    color: #222;
+}
+
+/* =======================
+   HEADER
+======================= */
+header {
+    background: var(--color-oscuro);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: var(--color-primario);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* =======================
+   SECCIONES
+======================= */
+.seccion {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* FOTO PERFIL */
+.foto {
+    width: 180px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid var(--color-primario);
+    margin-bottom: 20px;
+}
+
+/* BOTONES */
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 25px;
+    background: var(--color-primario);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #008bb3;
+}
+
+/* =======================
+   FOOTER
+======================= */
+footer {
+    background: var(--color-oscuro);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
